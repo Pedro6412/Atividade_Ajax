@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Atividade 4</title>
+</head>
+<body>
+<div id="conteudo"></div>
+
+<script>
+function getConteudo(url) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.onload = () => {
+      if (xhr.status === 200) resolve(xhr.responseText);
+      else reject("Erro ao carregar dados");
+    };
+    xhr.onerror = () => reject("Erro de rede");
+    xhr.send();
+  });
+}
+
+getConteudo("pesquisa.txt")
+  .then(data => document.getElementById("conteudo").innerHTML = data)
+  .catch(err => console.error(err));
+</script>
+</body>
+</html>

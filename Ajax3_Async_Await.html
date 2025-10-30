@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Atividade 5</title>
+</head>
+<body>
+<h2>Exemplo AJAX com Async/Await</h2>
+<div id="conteudo"></div>
+
+<script>
+async function carregarConteudo() {
+  try {
+    const response = await fetch("pesquisa.txt");
+    const data = await response.text();
+    document.getElementById("conteudo").innerHTML = data;
+  } catch (error) {
+    console.error("Erro:", error);
+  }
+}
+
+carregarConteudo();
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<p> <h1> PESQUISA COMPARATIVA </h1> </p>
+
+<p> <h3>-XMLHttpsRequest </h3></p>
+XMLHttpsRequest é uma API tradicional para fazer requisições AJAX. <br>
+Permite configurar headers, status e resposta, mas é mais verbosa.
+
+<p> <h3>-Fetch()</h3></p>
+fetch() é mais simples, baseada em Promises, e suporta recursos modernos como Response e Request. <br>
+
+<p> <h3> -Promises</h3></p>
+Promises facilitam o tratamento de callbacks e melhoram a legibilidade.
+
+<p><h3>-Async/Await</h3> </p>
+Async/Await simplifica ainda mais, permitindo que o código pareça síncrono, facilitando o tratamento de erros com try/catch

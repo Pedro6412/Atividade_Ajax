@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <p id="Conteudo"></p>
+    <script>
+        function carregarConteudo(){
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', "pesquisa.txt", true);
+            xhr.onload = function(){
+                if (xhr.status == 200){
+                    document.getElementById('Conteudo').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+        carregarConteudo()
+    </script>
+
+    
+</body>
+</html>

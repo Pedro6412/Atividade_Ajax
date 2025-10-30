@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <p id="Conteudo"></p>
+    <script>
+        function carregarConteudo(){
+            fetch("pesquisa.txt")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('Conteudo').innerHTML = data;
+            })
+            .catch(error => console.error("Erro:", error));
+        }
+    carregarConteudo()
+    </script>
+    
+</body>
+</html>
