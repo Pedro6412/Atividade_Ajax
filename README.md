@@ -1,5 +1,5 @@
 # Atividade_Ajax
-Nome dos intregrande:
+Nome dos integrantes:
 
 Kaio Dayvison Lopes Gomes,
 Mychel Lucas e 
