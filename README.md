@@ -2,6 +2,6 @@
 Nome dos integrantes:
 
 Kaio Dayvison Lopes Gomes,
-Mychel Lucas e 
-Pedro Henrique de Sousa Silva
+Mychel Lucas,
+Pedro Henrique de Sousa Silva e
 Bruno Campos
